@@ -1,0 +1,4 @@
+/* custom url background image */
+@mixin bg-img($name, $root_folder: '../images', $folder: '32x32', $extension: '.png') {
+    background-image: url(#{$root_folder}/#{$folder}/#{$name}#{$extension});
+}
