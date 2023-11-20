@@ -1,4 +1,13 @@
 /* custom url background image */
 @mixin bg-img($name, $root_folder: '../images', $folder: '32x32', $extension: '.png') {
+    // ... rest of style, or @extend %styles
     background-image: url(#{$root_folder}/#{$folder}/#{$name}#{$extension});
+}
+
+/* custom url button image*/
+@mixin button($url, $width: 32px, $height: 32px) {
+    // ... rest of style, or @extend %styles
+    height: #{$height};
+    width: #{$width};
+    background-image: url(#{$url});
 }
